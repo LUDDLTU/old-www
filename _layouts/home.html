@@ -46,6 +46,66 @@
             </div>
         </section>
 
+        {% assign news = site.categories['news'] %}
+        {% assign events = site.categories['events'] %}
+        {% assign protocols = site.categories['protocols'] %}
+        <section>
+            <br>
+            <center>
+            <div class="inner">
+                <header class="major">
+                    <h2>Latest</h2>
+                </header>
+                <div class="row">
+                    <div class="4u">
+                        <header>
+                            <h3>News</h3>
+                        </header>
+                        <ul class="alt">
+                            {% if news %}
+                                {% for n in news limit: 3%}
+                                <li><strong><a href="{{ n.url | absolute_url }}">{{ n.title }}</a></strong><br>{{ n.date | date_to_string }}</li>
+                                {% endfor %}
+                            {% else %}
+                                <li><strong>No new news</strong></li>
+                                
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <div class="4u">
+                        <header>
+                            <h3>Events</h3>
+                        </header>
+                        <ul class="alt">
+                            {% if  events %}
+                                {% for e in events limit: 3%}
+                                <li><strong><a href="{{ e.url | absolute_url }}">{{ e.title }}</a></strong><br>{{ e.date | date_to_string }}</li>
+                                {% endfor %}
+                            {% else %}
+                            
+                                <li><strong>No upcoming events</strong></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    <div class="4u">
+                        <header>
+                            <h3>Protocols</h3>
+                        </header>
+                        <ul class="alt">
+                            {% if protocols %}
+                                {% for p in protocols limit: 3%}
+                                <li><strong><a href="{{ p.url | absolute_url }}">{{ p.type }}</a></strong><br>{{ p.date | date_to_string }}</li>
+                                {% endfor %}
+                            {% else %}
+                            
+                                <li><strong>No protocols</strong></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </center>
+        </section>
     </div>
 
     {% include footer.html %}

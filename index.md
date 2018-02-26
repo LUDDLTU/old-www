@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Index
 landing-title: 'A Computer Society at LTU'
 description: null
 image: null

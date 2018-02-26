@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Aliquam
+title: Consequat
 description: Ipsum dolor sit amet
-image: assets/images/pic01.jpg
+image: assets/images/pic05.jpg
+category: news
 ---
 
 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 

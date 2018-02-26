@@ -19,7 +19,7 @@ tiles-count: 6
 
 # social settings
 500px_url:
-facebook_url:
+facebook_url: https://www.facebook.com/pg/LuddLTU
 github_url: https://github.com/luddltu
 gitlab_url: https://git.ludd.ltu.se
 googleplus_url: https://plus.google.com/communities/112795288603672507725
