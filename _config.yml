@@ -1,6 +1,6 @@
 # site settings
 title: /LUDD/
-subtitle: Computer Society
+subtitle: A Computer Society
 email: styrelsen@ludd.ltu.se
 description: Ludd is the computer society<br>at Luleå University of Technology<br>in the north of Sweden.
 baseurl: "/www" # the subpath of your site, e.g. /blog
